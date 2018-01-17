@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>@ViewBag.Title</title>
+	<link href="~/Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="header">
+		<div class="width_wrapper">
+			<div class="logo"><img src="http://localhost:49847/Content/imagesAdmin/logo.jpg" /></div>
+			<div class="top_menu">
+				<p><a href="#">LogOut</a></p>
+				<p>
+					<span>User Name:</span>
+					<Span>DuongNV5</Span>
+				</p>
+			</div>
+			<div class="main_menu">
+				<ul>
+					<li>
+						<a href="#">Quản lý chung</a>
+						<ul>
+							<li><a href="#">Công trình</a></li>
+							<li><a href="#">Gói thầu</a></li>
+							<li><a href="#">Hạng mục</a></li>
+							<li><a href="#">Kho quảng lý</a></li>
+							<li><a href="#">Vật tư</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Hệ Thống</a>
+						<ul>
+							<li><a href="#">Người dùng</a></li>
+							<li><a href="#">Thiết lập hệ thống</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="contennet">
+		@RenderBody()
+	</div>
+	<hr />
+	<footer class="footer">
+		<p>Copyright (C) SCI Group All right reserved. </p>
+	</footer>
+</body>
+</html>

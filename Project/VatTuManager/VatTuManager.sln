@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VatTuManager", "VatTuManager\VatTuManager.csproj", "{31EE89B8-10BA-4489-8EB0-1FE56948DFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{0785C63F-7BBD-4B16-ABB3-C22D29641ECD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31EE89B8-10BA-4489-8EB0-1FE56948DFFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31EE89B8-10BA-4489-8EB0-1FE56948DFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31EE89B8-10BA-4489-8EB0-1FE56948DFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31EE89B8-10BA-4489-8EB0-1FE56948DFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0785C63F-7BBD-4B16-ABB3-C22D29641ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0785C63F-7BBD-4B16-ABB3-C22D29641ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0785C63F-7BBD-4B16-ABB3-C22D29641ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0785C63F-7BBD-4B16-ABB3-C22D29641ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B605DBC-ED8C-4618-89A8-B3D76B620595}
+	EndGlobalSection
+EndGlobal

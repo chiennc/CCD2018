@@ -1,0 +1,53 @@
+﻿@model  VatTuManager.Areas.Admin.Models.LoginModel
+
+@{
+	ViewBag.Title = "login";
+	Layout = "~/Views/Shared/_LayoutLogin.cshtml";
+}
+
+@using (Html.BeginForm("login", "Admin", FormMethod.Post))
+{
+	@Html.AntiForgeryToken();
+
+	<div class="header">
+		<div class="logo"><img src="http://localhost:49847/Content/imagesAdmin/logo.jpg"></div>
+		<strong class="heder_title">PHẦN MỀM QUẢN LÝ YÊU CẦU</strong>
+	</div>
+	<div class="bg_login">
+		<div id="logologin">
+			@if (ViewBag.Massage != null)
+			{
+				<div class="error2">@ViewBag.Massage</div>
+			}
+			else
+			{
+				<div>Vui lòng điền tên đăng nhập và mật khẩu</div>
+			}
+		</div>
+		<table>
+			<tr>
+				<td><i class="icon-user">UserName: </i></td>
+				<td>
+					<div class="up2">@Html.TextBoxFor(m => m.userName)</div>
+					<span class="error">@Html.ValidationMessageFor(m => m.userName)</span>
+				</td>
+			</tr>
+			<tr>
+				<td><i class="icon-key">Password: </i></td>
+				<td>
+					<div class="up2">@Html.PasswordFor(m => m.passWork)</div>
+					<span class="error">@Html.ValidationMessageFor(m => m.passWork)</span>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input id="dn" type="submit" name="login3" value="Login" /></td>
+			</tr>
+		</table>
+	</div>
+}
+<hr>
+<footer class="footer">
+	<p>Copyright (C) SCI Group All right reserved. </p>
+</footer>
+

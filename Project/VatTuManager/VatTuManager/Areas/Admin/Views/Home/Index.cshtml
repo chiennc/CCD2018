@@ -1,0 +1,282 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+	Layout = "~/Views/Shared/_LayoutAd.cshtml";
+}
+<br /><br />
+<div class="bg_button">
+	<table>
+		<tbody>
+			<tr>
+				<td align="left"></td>
+				<td align="right">
+					<input type="button" class="btn-info" name="bttimkiem" value="Tìm kiếm" onclick="" />
+					<input type="button" class="btn-info" name="btnnew" value="Thêm mới" onclick="" />
+					<input type="button" class="btn-info" name="btnnew" value="Export" onclick="" />
+					<input type="button" class="btn-info" name="btndong" value="Đóng" onclick="window.location='index.php'" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<table class="table" cellpadding="0px" cellspacing="1px">
+	<tbody>
+		<tr class="ds-title">
+			<td class="suaxoa">Sửa</td>
+			<td class="suaxoa">Xóa</td>
+			<td class="suaxoa">Xem</td>
+			<td class="center">Ngày lập</td>
+			<td class="center">Số phiếu</td>
+			<td class="center">Mã AD</td>
+			<td class="center">Tên AD</td>
+			<td class="center">Mã HM</td>
+			<td class="center">Tên HM</td>
+			<td class="center">Mã GT</td>
+			<td class="center">Tên GT</td>
+			<td class="center">Tổng SL</td>
+			<td class="center">Ngày tạo</td>
+			<td class="center">Người tạo</td>
+			<td class="suaxoa">Xử lý</td>
+			<td class="suaxoa">Trạng Thái</td>
+		</tr>
+		<tr class="row-le">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/tick.png" title="Ngừng xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-chan">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/publish_x.png" title="Xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-le">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/tick.png" title="Ngừng xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-chan">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/publish_x.png" title="Xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-le">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/tick.png" title="Ngừng xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-chan">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/publish_x.png" title="Xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-le">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/tick.png" title="Ngừng xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-chan">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/publish_x.png" title="Xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-le">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/tick.png" title="Ngừng xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+		<tr class="row-chan">
+			<td class="suaxoa">
+				<a href=""><img src="http://localhost:49847/Content/imagesAdmin/edit.png"></a>
+			</td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/delete.png"></a></td>
+			<td class="suaxoa"><a href="" onclick="return checkdelete();"><img src="http://localhost:49847/Content/imagesAdmin/refresh.png"></a></td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">123456789</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">Casio EDIFCE</td>
+			<td class="tieude center">Sản phẩm</td>
+			<td class="tieude center">500,000</td>
+			<td class="tieude center">2018/01/16</td>
+			<td class="tieude center">DuongNV5</td>
+			<td class="suaxoa center">0</td>
+			<td class="suaxoa">
+				<a href="">
+					<img src="http://localhost:49847/Content/imagesAdmin/publish_x.png" title="Xuất bản chuyên mục này">
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
